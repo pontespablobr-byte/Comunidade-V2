@@ -1,0 +1,160 @@
+
+/* Reset basico*/
+.texto-comun, .titulo-site, .subtitulo {
+    font-family: Arial, sans-serif;
+    
+}
+body {
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Flex box no cabeçalho*/
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.titulo-site {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1100aa;
+    margin-left: 50px;
+}
+
+.menu-navegacao {
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/*-----------Layout corpo Pagina----------*/
+.container-layout {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    padding: 32px 24px;
+    margin: 0 auto;
+
+}
+
+.conteudo-principal {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000b8;
+    margin-bottom: 12px;
+}
+
+
+
+.barra-lateral {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-lateral {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8a255;
+}
+
+.lista-encontros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-encontro {
+    color: #555;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #e8a255;
+}
+
+/* ── rodapé ── */
+.rodape-site {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    background-color: #1a1a2e;
+    border-top: 3px solid #e8a255;
+    margin-top: auto;
+}
+
+.texto-rodape {
+    color: #aab0c4;
+    font-size: 13px;
+}
+
+.formulario-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+
+.botao-enviar {
+    background-color: #007e06;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.rotulo-campo {
+    font-weight: 700;
+    color: #585858;
+}
+
+.campo-entrada {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.link-menu {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-menu:hover {
+    background-color: #e8a255;
+    color: #fff;
+}
