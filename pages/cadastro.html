@@ -1,34 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comunidade Dev</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    
-    <nav class="menu-navegacao">
-            <a href="../index.html" class="link-menu">Inicio</a>
-        </nav>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+  </head>
+  <body>
+    <header class="cabecalho-principal">
+      <h1 class="titulo-site">Comunidade Dev</h1>
+      <nav class="menu-navegacao">
+        <a href="../index.html" class="link-menu">Início</a>
+      </nav>
+    </header>
 
+    <main class="conteudo-principal">
+      <h2 class="subtitulo">Junte-se a nós</h2>
+      <p class="texto-comun">
+        Preencha os dados abaixo para receber nossos avisos e participar dos
+        encontros.
+      </p>
+      <form class="formulario-cadastro">
+        <label for="nome" class="rotulo-campo">Seu nome:</label>
+        <input
+          type="text"
+          id="nome"
+          class="campo-entrada"
+          placeholder="Digite seu nome completo"
+          required
+        />
 
-        <main class="conteudo-principal">
-        <h2 class="subtitulo">Cominidade Dev</h2>
+        <label for="email" class="rotulo-campo">Seu email:</label>
+        <input
+          type="email"
+          id="email"
+          class="campo-entrada"
+          placeholder="nome@exemplo.com"
+          required
+        />
 
-            
-         <main class="conteudo-principal">
-        <h2 class="subtitulo">Junte-se a nós</h2>
-            <p class="texto-comun">Preencha os dados abaixo para receber nossos avisos e participar dos encontros.</p>
-        <form class="formulario-cadastro">
-            <label for="nome" class="rotulo-campo">Seu nome:</label>
-            <input type="text" id="nome" class="campo-entrada" placeholder="Digite seu nome completo" required>
-
-            <label for="email" class="rotulo-campo">Seu email:</label>
-            <input type="email" id="email" class="campo-entrada" placeholder="nome@exemplo.com" required>
-
-            <button type="submit" class="botao-enviar">Quero participar</button>
-        </form>
+        <button type="submit" class="botao-enviar">Quero participar</button>
+      </form>
     </main>
-</body>
+  </body>
 </html>
